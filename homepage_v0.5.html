@@ -57,6 +57,12 @@ $(document).ready(function(){
 			<li class="nav-item"><a class="nav-link active" href="#"> Telecoms </a></li>
 		</ul>
 		<ul class="navbar-nav pull-right">
+			<li class="nav-item mt-1 mr-2"><a href="https://www.facebook.com/tmtalkz/">
+				<img src="default_fb.png" alt="FB icon" class="img-responsive" height="30">
+			</a></li>
+			<li class="nav-item mt-1 mr-2"><a href="https://twitter.com/TMTalkz">
+				<img src="default_twitter.png" alt="Twitter icon" class="img-responsive" height="30">
+			</a> </li>
 			<li class="nav-item"><a class="nav-link active" href="#"> About </a></li>
 			<li class="nav-item"><a class="nav-link active" href="#"> Contact Us </a></li>
 			<form class="form-inline my-2 my-lg-0 mr-5">
@@ -76,10 +82,10 @@ $(document).ready(function(){
 			<p class="font-italic text-white"> Technology, Media and Telecoms </p>
         </div>
     </div>
+	<div id="startchange"></div> <!-- Changes color of navbar when scroll reaches this point -->
 </div>
-
 <!-- Container space for articles -->
-<div class="container-fluid pt-5" id="startchange">
+<div class="container-fluid pt-5">
 	<div class="row align-items-center" id="article-container">
 		<div class="col-md-3 m-5 article">
 			<a class="article-fade" href="#">
@@ -225,10 +231,21 @@ $(document).ready(function(){
 </div>
 
 <!-- Footer space -->
-<div class="row justify-content-center bg-dark w-100 mx-0">
-	<div class="col-4"> 
+<div class="container-fluid mx-0 bg-dark">
+<div class="row justify-content-left p-3">
+	<div class="col-md-auto">
+		<p class="text-white"> Subscribe to get all our posts via email: </p>
+		<form class="form-inline my-2 my-lg-0 mr-5">
+				<input type="search" class="form-control mr-sm-2" placeholder="Enter an email">
+				<button type="submit" class="btn btn-outline-success my-2  my-sm-0 active" id="email"> Subscribe </button>
+		</form>
+	</div>
+</div>
+<div class="row justify-content-center">
+	<div class="col-12"> 
 		<p class="text-white text-center m-0">© 2018 TMTalks</p>
 	</div>
+</div>
 </div>
 
 <!-- Optional JavaScript -->
